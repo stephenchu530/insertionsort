@@ -40,5 +40,5 @@ Ensure the following are installed:
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/stephenchu530/codefellowship/blob/master/LICENSE)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/stephenchu530/insertionsort/blob/master/LICENSE)
 
