@@ -3,10 +3,81 @@
  */
 package insertionsort;
 
+import org.junit.Before;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testNothing() {
+    @Test
+    public void testNoValues() {
+        int[] test = new int[]{};
+
+        assertArrayEquals("Should be empty",
+                new int[]{},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testSingleValue() {
+        int[] test = new int[]{0};
+
+        assertArrayEquals("Should be the same",
+                new int[]{0},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testTwoValuesSame() {
+        int[] test = new int[]{0, 0};
+
+        assertArrayEquals("Should be the same",
+                new int[]{0, 0},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testTwoValuesA() {
+        int[] test = new int[]{-5, 0};
+
+        assertArrayEquals("Should be the same",
+                new int[]{-5, 0},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testTwoValuesB() {
+        int[] test = new int[]{0, -5};
+
+        assertArrayEquals("Should be the same",
+                new int[]{-5, 0},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testThreeValuesA() {
+        int[] test = new int[]{-5, 0, 5};
+
+        assertArrayEquals("Should be the same",
+                new int[]{-5, 0, 5},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testThreeValuesB() {
+        int[] test = new int[]{5, 0, -5};
+
+        assertArrayEquals("Should be the same",
+                new int[]{-5, 0, 5},
+                App.insertionSort(test)
+        );
+    }
+
+    @Test public void testThreeValuesC() {
+        int[] test = new int[]{0, 5, -5};
+
+        assertArrayEquals("Should be the same",
+                new int[]{-5, 0, 5},
+                App.insertionSort(test)
+        );
     }
 }

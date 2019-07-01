@@ -28,12 +28,12 @@ Ensure the following are installed:
 
 *Example Input:*
 ```
- $ ./gradlw run --aregs '2 8 5 7'
+ $ ./gradlw run --args '2 8 5 7'
 ```
 
 *Example Output:*
 ```
- 2 5 7 8
+ [2 5 7 8]
 ```
 
 ## Approach & Efficiency

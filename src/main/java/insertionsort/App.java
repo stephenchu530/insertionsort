@@ -3,15 +3,41 @@
  */
 package insertionsort;
 
+import java.util.Arrays;
+
+import static java.lang.Integer.parseInt;
+
 public class App {
     public static void main(String[] args) {
         if (args.length > 0)
-            insertionSort(args);
+            System.out.println(Arrays.toString(insertionSort(strArrToIntArr(args))));
         else
             System.out.println("Please provide some arguments");
     }
 
-    public static String insertionSort(String[] args) {
-        return "nada";
+    public static int[] insertionSort(int[] numbers) {
+        int j = 0;
+        int temp = 0;
+
+        for (int i = 1; i < numbers.length; i++) {
+            j = i - 1;
+            temp = numbers[i];
+
+            while (j >= 0 && temp < numbers[j]) {
+                numbers[j + 1] = numbers[j];
+                j--;
+            }
+            numbers[j + 1] = temp;
+        }
+        return numbers;
+    }
+
+    public static int[] strArrToIntArr(String[] args) {
+        int numbers[] = new int[args.length];
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = parseInt(args[i]);
+        }
+        return numbers;
     }
 }
