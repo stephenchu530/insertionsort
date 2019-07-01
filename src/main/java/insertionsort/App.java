@@ -4,11 +4,14 @@
 package insertionsort;
 
 public class App {
-    public String getGreeting() {
-        return "Hello world.";
+    public static void main(String[] args) {
+        if (args.length > 0)
+            insertionSort(args);
+        else
+            System.out.println("Please provide some arguments");
     }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getGreeting());
+    public static String insertionSort(String[] args) {
+        return "nada";
     }
 }

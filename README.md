@@ -1,6 +1,6 @@
-# insertionsort
+# Insertion Sort
 
-## Description
+## Description/Challenge Summary
 This project uses Java Spring and other dependencies to create a "lecture" on `Insertion Sort` suitable for Code Fellow's 301 level course.
 
 ## Installation
@@ -36,9 +36,14 @@ Ensure the following are installed:
  2 5 7 8
 ```
 
+## Approach & Efficiency
+
+## Solution / Lecture Notes
+* [Solution Code](src/main/java/insertionsort/App.java)
+* [Lecture Nodes](LECTURE-NOTES.md)
+
 ## Contributors
 * Stephen Chu, [stephenchu530](https://github.com/stephenchu530)
 
 ## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/stephenchu530/insertionsort/blob/master/LICENSE)
-
