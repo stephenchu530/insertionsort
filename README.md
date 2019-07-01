@@ -37,6 +37,7 @@ Ensure the following are installed:
 ```
 
 ## Approach & Efficiency
+`public static int[] insertionSort(int[] numbers)` - O(n^2)
 
 ## Solution / Lecture Notes
 * [Solution Code](src/main/java/insertionsort/App.java)
